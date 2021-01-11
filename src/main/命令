@@ -1,0 +1,6 @@
+cd build/classes/kotlin/main/
+反编译命令：
+javap -c com.shengsiyuan._15_java_use_kotlin.Test
+反编译并查看私有方法和变量命令：
+javap -c -p com.shengsiyuan._15_java_use_kotlin.Test
+
