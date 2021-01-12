@@ -34,10 +34,11 @@ fun main() = runBlocking {
      */
 
     /*
-        我：我们客观看到的是代码的流程是否继续，在挂起函数 coroutineScope执行期间，
-            线程跑去执行coroutineScope之前的事件了
-            等待coroutineScope执行结束回来。
-            而不是像runBlocking客观的阻塞了线程使得代码流程停止。
+        我们客观看到的是代码的流程是否向下执行
+        在挂起函数 coroutineScope执行期间，
+        线程跑去执行coroutineScope之前的事件了
+        等待coroutineScope执行结束回来再继续执行下面的流程。
+        而不是像runBlocking客观的阻塞了线程使得代码流程停止。
      */
     coroutineScope {
         launch {
