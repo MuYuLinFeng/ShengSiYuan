@@ -1,4 +1,4 @@
-package com.shengsiyuan._18_coroutine
+package com.shengsiyuan._18_coroutine._1_create
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
@@ -7,6 +7,7 @@ import kotlinx.coroutines.launch
 fun main() {
     //launch函数不会阻塞线程执行，而是在后台新创建一个协程。
     GlobalScope.launch {
+        //delay 挂起协程，只能用在协程当中
         delay(1000)
         println("Kotlin Coroutines")
     }
