@@ -9,7 +9,7 @@ import kotlinx.coroutines.runBlocking
  */
 
 fun main() = runBlocking {
-    repeat(1000) {
+    repeat(100000) {
         launch {
             delay(100)
             println("abc $it")

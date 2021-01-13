@@ -6,7 +6,7 @@ import kotlin.concurrent.thread
     thread会乱序列，launch不会乱序列
  */
 fun main() {
-    repeat(1000) {
+    repeat(100000) {
         thread {
             Thread.sleep(100)
             println("a $it")
