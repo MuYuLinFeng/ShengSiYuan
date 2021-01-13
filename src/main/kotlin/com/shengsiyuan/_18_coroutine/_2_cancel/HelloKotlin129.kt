@@ -7,6 +7,7 @@ fun main() = runBlocking {
     val job = GlobalScope.launch {
         repeat(20) { i ->
             println("hello $i")
+            //delay操作会做取消状态的检查 此处可以应证HelloKotlin131.kt
             delay(500)
         }
     }
