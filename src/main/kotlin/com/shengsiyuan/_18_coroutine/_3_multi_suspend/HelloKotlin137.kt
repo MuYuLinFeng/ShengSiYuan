@@ -20,6 +20,7 @@ import kotlin.system.measureTimeMillis
 
 fun main() = runBlocking {
     val elapsedTime = measureTimeMillis {
+        //参数CoroutineStart.LAZY模式的执行契机 Deferred.await方法调用或者Job.start方法调用
         val value1 = async { intValue() }
         val value2 = async { intValue2() }
         val result1 = value1.await()
