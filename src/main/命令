@@ -4,3 +4,5 @@ javap -c com.shengsiyuan._15_java_use_kotlin.Test
 反编译并查看私有方法和变量命令：
 javap -c -p com.shengsiyuan._15_java_use_kotlin.Test
 
+打印执行的协程名
+-Dkotlinx.coroutines.debug

@@ -23,7 +23,7 @@ private fun myMethod(): Flow<Int> = flow {
 
 fun main() = runBlocking {
     myMethod().flowOn(Dispatchers.Default).collect {
-        log("started $it")
+        log("collect $it")
     }
     log("runBlocking")
 }
